@@ -1,0 +1,570 @@
+@import "vars/_colors.scss";
+@import "vars/_mixin.scss";
+
+// 480-767
+@include phone {
+ .header{
+   .header-top{
+     .logo{
+       a{
+         font-size:25px
+       }
+     }
+     .header-right{
+       .social-icons{
+         ul{
+           li{
+             a{
+
+             }
+           }
+         }
+       }
+       .header-button{
+         .sub-btn{
+
+         }
+       }
+     }
+   }
+  .menu-bar{
+    .main-menu{
+      display: none;
+    }
+    .mobile-menu{
+      display: block;
+      float:left;
+      .slicknav_menu{
+        background: transparent;
+         .slicknav_nav{
+           li{
+             display: block;
+             border-bottom: 1px solid #dddddd;
+             background: $secondary-color;
+           }
+
+            a{
+              text-decoration: none;
+            }
+           &:hover{
+             color:$primary-color;
+           }
+           .slicknav_row{
+             background: transparent !important;
+             &:hover{
+               background: transparent !important;
+             }
+           }
+           .slicknav_arrow{
+             color:$secondary-color;
+           }
+         }
+        .slicknav_btn{
+          float:Left;
+          background: $primary-color;
+        }
+      }
+    }
+    .menu-right{
+      .weather{}
+      .search-bar{}
+      .search-top{
+        right:0;
+      }
+    }
+  }
+ }
+.featured-area{
+  &::before{
+    width: 50%;
+    height: 30%;
+  }
+  .main-news{
+    .news-head{
+      img{
+        max-width: 516px;
+      }
+      .news-tag{
+
+      }
+    }
+    .news-content{
+      h2{
+
+      }
+      p{
+
+      }
+    }
+    .news-button{
+      a{
+
+      }
+    }
+
+  }
+  .news-list-right{
+    h3{
+      &.title{}
+    }
+    .news-list-main{
+      .single-list{
+        h4{
+
+        }
+        p{
+
+        }
+      }
+    }
+  }
+}
+
+.news-middle-area{
+  .middle-news-main{
+    .middle-single-news{
+      &::before{
+
+      }
+      .news-content{
+        h3{
+          font-size: 17px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.news-with-box{
+  &.two,&.six{
+    .single-news-box{
+      .image-head{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.footer{
+  .footer-top{
+    .f-logo{
+      text-align: center;
+      float: left;
+      display: inline-block;
+      margin:0;
+    }
+    .footer-menu{
+      float:right;
+      .navigation{
+        ul{
+          li{
+            margin-right: 5px;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    .footer-right{
+      width: 100%;
+      .copyright-text{
+        float:left;
+        display: block;
+        margin-bottom: 10px !important;
+      }
+      .social-icons{
+        float:right;
+      }
+    }
+  }
+}
+
+}
+
+//768 -991
+@include tablet {
+  .header{
+    .menu-bar{
+      .main-menu{
+        display: none;
+      }
+      .mobile-menu{
+        display: block;
+        float:left;
+        .slicknav_menu{
+          background: transparent;
+          .slicknav_nav{
+            li{
+              display: block;
+              border-bottom: 1px solid #dddddd;
+              background: $secondary-color;
+            }
+
+            a{
+              text-decoration: none;
+            }
+            &:hover{
+              color:$primary-color;
+            }
+            .slicknav_row{
+              background: transparent !important;
+              &:hover{
+                background: transparent !important;
+              }
+            }
+            .slicknav_arrow{
+              color:$secondary-color;
+            }
+          }
+          .slicknav_btn{
+            float:Left;
+            background: $primary-color;
+          }
+        }
+      }
+      .menu-right{
+        .weather{}
+        .search-bar{}
+        .search-top{
+          right:0;
+        }
+      }
+    }
+  }
+  .featured-area{
+    &::before{
+      width: 50%;
+      height: 37%;
+    }
+    .main-news{
+      .news-head{
+        img{
+          max-width: 100%;
+        }
+        .news-tag{
+
+        }
+      }
+      .news-content{
+        h2{
+
+        }
+        p{
+
+        }
+      }
+      .news-button{
+        a{
+
+        }
+      }
+
+    }
+    .news-list-right{
+      h3{
+        &.title{}
+      }
+      .news-list-main{
+        .single-list{
+          h4{
+            a{
+              font-size: 21px;
+            }
+          }
+          p{
+            margin-bottom: 0;
+          }
+          &:nth-child(4),&:nth-child(5){
+            display: none;
+          }
+          &:nth-child(3){
+            border:none;
+          }
+        }
+      }
+    }
+  }
+  .news-middle-area{
+    .breaking-news{
+      top: 30px;
+      width: 32%;
+      .news-tag{
+        i{
+
+        }
+      }
+      img{
+
+      }
+    }
+  }
+  .news-with-box{
+    img{
+      width: 100%;
+    }
+    .single-news-box{
+      h3{
+        font-size: 16px;
+      }
+    }
+    .news-box-big{
+      margin-top:20px;
+    }
+  }
+  .footer{
+    .footer-top{
+      .f-logo{
+
+      }
+      .footer-menu{
+        float:right;
+        .navigation{
+          ul{
+            li{
+              margin-right: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .footer-right{
+        float:none;
+        .copyright-text{
+
+        }
+      }
+    }
+  }
+
+}
+
+//991-1023
+@include small-desktop{
+  .header{
+  .menu-bar{
+    .main-menu{
+      display: none;
+    }
+    .mobile-menu{
+      display: block;
+      float:left;
+      .slicknav_menu{
+        background: transparent;
+        .slicknav_nav{
+          li{
+            display: block;
+            border-bottom: 1px solid #dddddd;
+          }
+
+          a{
+            text-decoration: none;
+          }
+          &:hover{
+            background: transparent !important;
+            color:$primary-color;
+          }
+          .slicknav_row{
+            background: transparent !important;
+            &:hover{
+              background: transparent !important;
+            }
+          }
+          .slicknav_arrow{
+            color:$primary-color;
+          }
+        }
+        .slicknav_btn{
+          float:Left;
+        }
+      }
+    }
+  }
+}
+  .featured-area{
+    &::before{
+      width: 50%;
+      height: 30%;
+    }
+    .main-news{
+      .news-head{
+        img{
+          width: 100%;
+        }
+        .news-tag{
+
+        }
+      }
+      .news-content{
+        h2{
+
+        }
+        p{
+
+        }
+      }
+      .news-button{
+        a{
+
+        }
+      }
+
+    }
+    .news-list-right{
+      h3{
+        &.title{}
+      }
+      .news-list-main{
+        .single-list{
+          h4{
+
+          }
+          p{
+
+          }
+        }
+      }
+    }
+  }
+  .news-middle-area {
+    .breaking-news {
+      width: 30%;
+    }
+  }
+
+}
+
+//1024-1199
+@include medium-desktop{
+  .featured-area{
+    &::before{
+      width: 36%;
+      height: 59%;
+    }
+    .main-news{
+      .news-head{
+        img{
+          max-width: 95%;
+        }
+        .news-tag{
+
+        }
+      }
+      .news-content{
+        h2{
+
+        }
+        p{
+
+        }
+      }
+      .news-button{
+        a{
+
+        }
+      }
+
+    }
+    .news-list-right{
+      h3{
+        &.title{}
+      }
+      .news-list-main{
+        .single-list{
+          h4{
+            a {
+              font-size: 20px;;
+              line-height: 22px;
+            }
+          }
+          p{
+
+          }
+          &:nth-child(5){
+            display: none;
+          }
+          &:nth-child(4){
+            border:none;
+          }
+        }
+      }
+    }
+  }
+  .news-middle-area{
+    .breaking-news{
+      width: 29%;
+    }
+  }
+.footer{
+  .footer-top{
+    .footer-menu{
+      .navigation{
+        ul{
+          li{
+            margin-right: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+
+//1024-1400
+@include large-desktop{
+  .featured-area{
+    &::before{
+      width: 36%;
+      height: 61%;
+    }
+    .main-news{
+      .news-head{
+        img{
+          max-width: 95%;
+        }
+        .news-tag{
+
+        }
+      }
+      .news-content{
+        h2{
+
+        }
+        p{
+
+        }
+      }
+      .news-button{
+        a{
+
+        }
+      }
+
+    }
+    .news-list-right{
+      h3{
+        &.title{}
+      }
+      .news-list-main{
+        .single-list{
+          h4{
+
+          }
+          p{
+
+          }
+        }
+      }
+    }
+  }
+  .news-middle-area{
+    .breaking-news{
+      width: 29%;
+    }
+  }
+
+}
