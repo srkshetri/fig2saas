@@ -1,7 +1,7 @@
 @import "vars/_colors.scss";
 @import "vars/_mixin.scss";
 
-//320-480{
+//upto 480{
 @include small-phone{
   .header{
     .menu-bar{
@@ -54,7 +54,7 @@
   .featured-area{
     &::before{
       width: 50%;
-      height: 28%;
+      height: 22%;
     }
     .main-news{
       .news-head{
@@ -103,7 +103,7 @@
   .news-middle-area{
     .breaking-news{
       top: 30px;
-      width: 28%;
+      width: 24%;
       .news-tag{
         i{
 

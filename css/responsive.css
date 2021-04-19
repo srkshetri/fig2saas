@@ -39,7 +39,7 @@
 
   .featured-area::before {
     width: 50%;
-    height: 28%;
+    height: 22%;
   }
   .featured-area .main-news .news-head img {
     max-width: 100%;
@@ -56,7 +56,7 @@
 
   .news-middle-area .breaking-news {
     top: 30px;
-    width: 28%;
+    width: 24%;
   }
   .news-with-box img {
     width: 100%;
