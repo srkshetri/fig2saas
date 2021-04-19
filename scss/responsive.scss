@@ -1,6 +1,161 @@
 @import "vars/_colors.scss";
 @import "vars/_mixin.scss";
 
+//320-480{
+@include small-phone{
+  .header{
+    .menu-bar{
+      .main-menu{
+        display: none;
+      }
+      .mobile-menu{
+        display: block;
+        float:left;
+        .slicknav_menu{
+          background: transparent;
+          .slicknav_nav{
+            li{
+              display: block;
+              border-bottom: 1px solid #dddddd;
+              background: $secondary-color;
+            }
+
+            a{
+              text-decoration: none;
+            }
+            &:hover{
+              color:$primary-color;
+            }
+            .slicknav_row{
+              background: transparent !important;
+              &:hover{
+                background: transparent !important;
+              }
+            }
+            .slicknav_arrow{
+              color:$secondary-color;
+            }
+          }
+          .slicknav_btn{
+            float:Left;
+            background: $primary-color;
+          }
+        }
+      }
+      .menu-right{
+        .weather{}
+        .search-bar{}
+        .search-top{
+          right:0;
+        }
+      }
+    }
+  }
+  .featured-area{
+    &::before{
+      width: 50%;
+      height: 28%;
+    }
+    .main-news{
+      .news-head{
+        img{
+          max-width: 100%;
+        }
+        .news-tag{
+
+        }
+      }
+      .news-content{
+        h2{
+
+        }
+        p{
+
+        }
+      }
+      .news-button{
+        a{
+
+        }
+      }
+
+    }
+    .news-list-right{
+      h3{
+        &.title{
+          margin-top: 30px;
+        }
+      }
+      .news-list-main{
+        .single-list{
+          h4{
+            a{
+              font-size: 21px;
+            }
+          }
+          p{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .news-middle-area{
+    .breaking-news{
+      top: 30px;
+      width: 28%;
+      .news-tag{
+        i{
+
+        }
+      }
+      img{
+
+      }
+    }
+  }
+  .news-with-box{
+    img{
+      width: 100%;
+    }
+    .single-news-box{
+      h3{
+        font-size: 16px;
+      }
+    }
+    .news-box-big{
+      margin-top:20px;
+    }
+  }
+  .footer{
+    .footer-top{
+      .f-logo{
+
+      }
+      .footer-menu{
+        float:right;
+        .navigation{
+          ul{
+            li{
+              margin-right: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .footer-right{
+        float:none;
+        .copyright-text{
+
+        }
+      }
+    }
+  }
+
+}
+
+
+
 // 480-767
 @include phone {
  .header{

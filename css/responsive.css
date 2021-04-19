@@ -1,3 +1,84 @@
+@media (max-width: 479px) {
+  .header .menu-bar .main-menu {
+    display: none;
+  }
+  .header .menu-bar .mobile-menu {
+    display: block;
+    float: left;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu {
+    background: transparent;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_nav li {
+    display: block;
+    border-bottom: 1px solid #dddddd;
+    background: #000000;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_nav a {
+    text-decoration: none;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_nav:hover {
+    color: #D24545;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_nav .slicknav_row {
+    background: transparent !important;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_nav .slicknav_row:hover {
+    background: transparent !important;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_nav .slicknav_arrow {
+    color: #000000;
+  }
+  .header .menu-bar .mobile-menu .slicknav_menu .slicknav_btn {
+    float: Left;
+    background: #D24545;
+  }
+  .header .menu-bar .menu-right .search-top {
+    right: 0;
+  }
+
+  .featured-area::before {
+    width: 50%;
+    height: 28%;
+  }
+  .featured-area .main-news .news-head img {
+    max-width: 100%;
+  }
+  .featured-area .news-list-right h3.title {
+    margin-top: 30px;
+  }
+  .featured-area .news-list-right .news-list-main .single-list h4 a {
+    font-size: 21px;
+  }
+  .featured-area .news-list-right .news-list-main .single-list p {
+    margin-bottom: 0;
+  }
+
+  .news-middle-area .breaking-news {
+    top: 30px;
+    width: 28%;
+  }
+  .news-with-box img {
+    width: 100%;
+  }
+  .news-with-box .single-news-box h3 {
+    font-size: 16px;
+  }
+  .news-with-box .news-box-big {
+    margin-top: 20px;
+  }
+
+  .footer .footer-top .footer-menu {
+    float: right;
+  }
+  .footer .footer-top .footer-menu .navigation ul li {
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .footer .footer-top .footer-right {
+    float: none;
+  }
+}
 @media (min-width: 480px) and (max-width: 767px) {
   .header .header-top .logo a {
     font-size: 25px;
