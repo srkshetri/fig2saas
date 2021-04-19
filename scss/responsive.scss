@@ -4,6 +4,12 @@
 //upto 480{
 @include small-phone{
   .header{
+    .header-right{
+      .social-icons{
+        margin-right: 4px;
+      }
+    }
+
     .menu-bar{
       .main-menu{
         display: none;
@@ -101,9 +107,13 @@
     }
   }
   .news-middle-area{
+    .col-9{
+      width: 100%;
+    }
     .breaking-news{
       top: 30px;
-      width: 24%;
+      width: 100%;
+      position: relative;
       .news-tag{
         i{
 

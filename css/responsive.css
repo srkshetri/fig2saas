@@ -1,4 +1,7 @@
 @media (max-width: 479px) {
+  .header .header-right .social-icons {
+    margin-right: 4px;
+  }
   .header .menu-bar .main-menu {
     display: none;
   }
@@ -54,9 +57,13 @@
     margin-bottom: 0;
   }
 
+  .news-middle-area .col-9 {
+    width: 100%;
+  }
   .news-middle-area .breaking-news {
     top: 30px;
-    width: 24%;
+    width: 100%;
+    position: relative;
   }
   .news-with-box img {
     width: 100%;
